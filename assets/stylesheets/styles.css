@@ -35,9 +35,34 @@ header a.logo:hover {
   opacity: 0.8;
 }
 
+header a.banner {
+  position: absolute;
+  display:block;
+  left:50%;
+  top:0%;
+  transform: translate(-50%,0);
+  /*padding: 10px 10px 10px 10px;*/
+  text-align: center;
+  height:auto;
+  width:1000px;
+  font-family:"poppins";
+  color:#fff;
+  font-size:10em;
+  font-weight:bold;
+}
+
+header a.background {
+  background-color: #232128;
+  width: auto;
+  height:200px;
+  display:block;
+  /*background: rgb(85, 81, 81) url(/assets/images/PXL_20210706_183348525.PANO.jpg) no-repeat center;
+  background-size: cover;*/
+}
+
 nav {
-  background-color: rgb(0, 0, 0);
-  height:20vh; /* Q: How to set a % based on screen size */
+  background-color: #c2b8db;
+  height: 50px; /* 20vh; Q: How to set a % based on screen size */
   width:auto;
 }
 /* END styling for logo on top */
@@ -49,10 +74,10 @@ nav ul {
   margin: 0;
   position:absolute;
   float: none;
-  top: 30%;
+  top: 200px;
   left: 50%;
-  /*transform: translate(-60%, -90%);*/
-  /*padding: 10px 0px 0px 10px*/;
+  transform: translate(-50%,0);
+  width:1000px;
 }
 
 nav ul::after {
@@ -68,21 +93,21 @@ nav > ul > li {
 nav ul li a {
   display: inline-block;
   color: #fff;
-  padding: 10px 30px 15px 30px;
+  padding: 10px 50px 10px 50px;
   text-decoration: none;
   width: auto;
 }
 
 /* styling hover nav item */
 nav ul li a:hover {
-  background-color: #339999;
+  background-color: rgb(204, 211, 211, 0.2);
   text-decoration: none;
   color: #fff;
 }
 
 .active-page { /* defines class active-page https://www.w3schools.com/cssref/sel_class.asp */
-  border-bottom:#00a2ff 7px;
-  background-color: rgba(0, 102, 102, 0.6);
+  border-bottom: #F6CA56 solid 3px;
+  /*background-color: rgba(0, 102, 102, 0.6);*/
 }
 
 .active-menu-item {
@@ -151,20 +176,35 @@ nav ul li a:hover {
   width: auto;
   height: auto;
   background-color: rgba(255, 255, 255, 0.8);
-  background: url(/assets/images/PXL_20220219_Background.jpeg) no-repeat center;
-  background-size: cover;
+  /* background: url(/assets/images/PXL_20220219_Background.jpeg) no-repeat center; COMMENT OUT FOR PSEUDOELEMENT */
+  /*background-size: cover;*/
   display: flex; /* for hero text */
   justify-content: center; /* for hero text */
   align-items: center; /* for hero text */
   z-index: -1;
-
 }
+
+.home-page::before{
+  content:"";
+  background-image: url(/assets/images/PXL_20220219_Background.jpeg);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+}
+
 .hero-text {
   font-family:"poppins";
   color: #333333;
-  font-size: 4em;
+  font-size: 2em;
   font-weight: bold;
+  z-index:1;
 }
+
+
 /* END styling hero screen*/
 
 /* style page banner */
@@ -176,19 +216,19 @@ header.food-page {
 }
 
 header.page-3 {
-  /* add you own header here */
+  background: rgb(85, 81, 81)
 }
 
 header.page-4 {
-  /* add you own header here */
+  background: rgb(85, 81, 81)
 }
 
 header.page-5 {
-  /* add you own header here */
+  background: rgb(85, 81, 81)
 }
 
 header.page-6 {
-  /* add you own header here */
+  background: rgb(85, 81, 81)
 }
 
 /* BEG styling headings */
@@ -310,7 +350,7 @@ footer > div {
 
   nav {
     /* padding: top right bottom left */
-    padding: 70px 0px 0px 20px;
+    padding: 50px 0px 0px 20px;
   }
   nav > ul {
     padding-left: 0px;
