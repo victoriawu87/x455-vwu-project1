@@ -233,10 +233,12 @@ header.page-6 {
 
 /* BEG styling headings */
 h1 {
-  margin: 0px 0px 1em 0px;
-  color: #076d6f;
-  font-size: 1.7em;
+  font-family:"poppins";
+  margin: 1em 1em 0.2em 1em;
+  color: #ffffff;
+  font-size: 4em;
   font-weight: bold;
+  letter-spacing: 5px;
 }
 
 h3 {
@@ -312,6 +314,10 @@ footer > div {
   padding: 0px 40px 0px 40px;
 }
 
+/* Styling text box */
+
+
+/* Styling Screen Size */
 @media screen and (max-width: 750px) {
   /*header {
     height: 240px;
