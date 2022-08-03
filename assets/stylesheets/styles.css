@@ -60,6 +60,8 @@ header a.background {
   background-size: cover;*/
 }
 
+
+
 nav {
   background-color: #c2b8db;
   height: 50px; /* 20vh; Q: How to set a % based on screen size */
@@ -231,6 +233,21 @@ header.page-6 {
   background: rgb(85, 81, 81)
 }
 
+/* style footer */
+.footerstyle {
+  position: fixed;
+  display:block;
+  color:#fff;
+  width: 100%;
+  background-color: #232128;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  bottom: 0;
+  left: 0;
+  font-family: "poppins";
+  z-index:2;
+}
+
 /* BEG styling headings */
 h1 {
   font-family:"poppins";
@@ -239,6 +256,11 @@ h1 {
   font-size: 4em;
   font-weight: bold;
   letter-spacing: 5px;
+}
+
+h2 {
+  font-family:"poppins";
+  letter-spacing: 2px;
 }
 
 h3 {
