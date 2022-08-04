@@ -6,11 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/table.css" />
   <title>Page 4</title>
+
+
+
+
 </head>
 
 <body style="background-color: #667080;">
   <header class="page-4">
+    <a class="logo" href="index.html"><span>Subaru</span></a>
     <a class="banner" href="index.html"><span>Hello Subi</span></a>
     <a class="background" href="index.html" style="background-image: url(/assets/images/PXL_20210706_183348525.PANO.jpg); background-size: cover;"></a>
     <nav>
@@ -25,7 +31,7 @@
           <a href="page-3.html">Photos</a>
         </li>
         <li class="active-page">
-          <a href="page-4.html">Routes</a>
+          <a href="page-4.html">Records</a>
         </li>
         <li>
           <a href="page-5.html">Videos</a>
@@ -39,7 +45,7 @@
         <div class="dropdown-content">
           <a href="page-2.html">About</a>
           <a href="page-3.html">Photos</a>
-          <a href="page-4.html">Routes</a>
+          <a href="page-4.html">Records</a>
           <a href="page-5.html">Videos</a>
           <a href="page-6.html">Cars</a>
         </div>
@@ -48,38 +54,61 @@
   </header>
   <article>
     <div>
-      <h1>Routes</h1>
-      <p>
-        <img class="size03 float-right padding-left" src="./assets/images/vegetables-02.jpg"
-          alt="various types of vegetables" />
-          Welcome to my page! Just started my overlanding trip recently in 2021 with my 2021 Subaru Outback Onyx XT. Driving has always been my favorite since I started back in 2004. It has a unique feeling of freedom as you drive on the road with the car that can take you anywhere. 
-          I will never forget the first time I drove my 2006 Toyota Corolla S. But with the Corolla, 
-          it can only be driven on asphalt road.The fun begins when you are off the beaten path!
-      </p>
+      <h1>RECORDS</h1>
+    
+      <table id="your-table-items">
+        <thead>
+          <tr>
+            <th>Utensil</th>
+            <th>Type</th>
+            <th>Name</th>
+            <th>Size</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="./assets/images/blender-01.jpeg" alt="Blender" /></td>
+            <td>Electronic Appliance</td>
+            <td>Blender</td>
+            <td>Big</td>
+          </tr>
+          <tr>
+            <td><img src="./assets/images/cutting-board-01.jpeg" alt="Cutting Board" /></td>
+            <td>Hand Tool</td>
+            <td>Cutting Board</td>
+            <td>Small</td>
+          </tr>
+          <tr>
+            <td>
+              <img src="./assets/images/fry-pan-02.jpeg" alt="Fry Pan" />
+            </td>
+            <td>Cookware</td>
+            <td>Fry Pan</td>
+            <td>Medium</td>
+          </tr>
 
-      <h2>Car Updates</h2>
-      <p>
-        <ul>
-          <li>Turpis egestas integer eget aliquet nibh praesent.</li>
-          <li>Turpis egestas integer eget aliquet nibh praesent.</li>
-        </ul>
-      </p>
+        </tbody>
+      </table>
     </div>
-  </article>
-  <section style="padding: 40px">
-    <h3>Food Categories</h3>
-    <ol>
-      <li>
-        <a href="#vegetables">Vegetables</a>
-      </li>
-      <li>
-        <a href="#fruits">Fruits</a>
-      </li>
-      <li>
-        <a href="#grains">Grains, Legumes, Nuts & Seeds</a>
-      </li>
-    </ol>
-  </section>
+
+</article>
+
+ <!-- jquery.min.js should be loaded before jquery.tablesorter.min.js because tablesorter requires basice jquery -->
+ <script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script type="text/JavaScript"
+   src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
+ <!-- BEG JavaScript -->
+ <script>
+   $(document).ready(function () {
+     $("table#your-table-items").tablesorter({
+       sortList: [[2, 0]],
+       CssAsc: "tablesorter-headerAsc",
+       CssDesc: "tablesorter-headerDesc"
+     });
+   });
+ </script>
+ <!-- END JavaScript -->
+
   <div class="to-top"><a href="#">Top</a></div>
   <footer class="footerstyle">
     <div>
