@@ -10,7 +10,7 @@ table#your-table-items {
 
   table#your-table-items th:nth-child(1),
   table#your-table-items td:nth-child(1) {
-    width: 35%;
+    width: 25%;
   }
 
   table#your-table-items th:nth-child(2),
@@ -20,15 +20,16 @@ table#your-table-items {
 
   table#your-table-items th:nth-child(3),
   table#your-table-items td:nth-child(3) {
-    width: 20%;
+    width: 30%;
   }
 
   table#your-table-items th:nth-child(4),
   table#your-table-items td:nth-child(4) {
-    width: 15%;
+    width: 20%;
   }
 
   table#your-table-items thead {
+    font-family:"poppins";
     font-size: 0.7em;
     text-transform: uppercase;
   }
@@ -41,16 +42,17 @@ table#your-table-items {
 
   table#your-table-items thead th:hover {
     color: #fff;
-    background-color: #339999;
+    background-color: #F6CA56;
     cursor: pointer;
   }
 
   table#your-table-items thead th.tablesorter-headerAsc,
   table#your-table-items thead th.tablesorter-headerDesc {
-    background-color: rgba(0, 102, 102, 0.8);
+    background-color: rgb(246, 202, 86,0.8);
   }
 
   table#your-table-items tbody {
+    font-family:"poppins";
     font-size: 0.9em;
     line-height: 15px;
   }
@@ -58,12 +60,16 @@ table#your-table-items {
   /*** make sure table#your-table-items tbody tr:nth-child(even) defined before table#your-table-items tbody tr:hover */
   /*** otherwise, it would need to define table#your-table-items tbody tr:nth-child(even):hover*/
   table#your-table-items tbody tr:nth-child(even) {
-    background: rgba(154, 154, 154, 0.25);
+    background: #CFD8E4;
+  }
+
+  table#your-table-items tbody tr:nth-child(odd) {
+    background: rgb(207, 216, 228,0.5);
   }
 
   table#your-table-items tbody tr:hover {
-    color: #fff;
-    background-color: #339999;
+    color: #000;
+    background-color: #F6CA56;
   }
 
   table#your-table-items tbody td {

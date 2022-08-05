@@ -63,7 +63,7 @@ header a.background {
 
 
 nav {
-  background-color: #c2b8db;
+  background-color: #232128;
   height: 50px; /* 20vh; Q: How to set a % based on screen size */
   width:auto;
 }
@@ -274,11 +274,19 @@ h3 {
   font-weight: normal;
   letter-spacing: 2px;
 }
+
+p{
+  font-family:"poppins";
+}
+
+li {
+  font-family:"poppins";
+}
 /* END styling headings */
 
 /* Styling anchor link (hyperlink) */
 a {
-  color: #00a2ff;
+  color: #fff;
   text-decoration: none;
 }
 
