@@ -8,7 +8,7 @@
 /* BEG styling for font */
 @font-face {
   font-family: "poppins";
-  src: url(/assets/fonts/Poppins-Regular.ttf);
+  src: url("../fonts/Poppins-Regular.ttf");
 }
 
 /* BEG styling for logo on top */
@@ -21,7 +21,7 @@ header a.logo {
   display: block;
   width: 70px;
   height: 70px;
-  background: url(/assets/images/Subaru-Logo.png) no-repeat 0 0;
+  background: url("../images/Subaru-Logo.png") no-repeat 0 0;
   background-size: contain;
   z-index: 1;
   top: 10px;
@@ -212,7 +212,7 @@ nav ul li a:hover {
 /* style page banner */
 /* style all header with the definition below */
 header.food-page {
-  background: rgb(85, 81, 81) url(/assets/images/PXL_20210706_183348525.PANO.jpg) no-repeat center; /* top center bottom - 1/3 of the image full height */
+  background: rgb(85, 81, 81) url("../images/PXL_20210706_183348525.PANO.jpg") no-repeat center; /* top center bottom - 1/3 of the image full height */
   background-size: cover;
   height: 330px;
 }
