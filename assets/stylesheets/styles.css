@@ -188,7 +188,7 @@ nav ul li a:hover {
 
 .home-page::before{
   content:"";
-  background-image: url(/assets/images/PXL_20220219_Background.JPEG);
+  background-image: url(/assets/images/PXL_20220219_BACKGROUND.JPEG);
   background-size: cover;
   position: absolute;
   top: 0px;
